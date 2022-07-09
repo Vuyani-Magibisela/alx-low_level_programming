@@ -2,6 +2,8 @@
 
 /**
  * _isupper check if character is upper case or lowercase
+ *
+ *
  */
 
 int main(void)
@@ -10,11 +12,11 @@ int main(void)
 
 	ch = "A";
 
-	if(isupper(ch))
+	if (isupper(ch))
 	{
 		printf(" is uppercase chatacter");
 	}
-	else if(islower(ch))
+	else if (islower(ch))
 	{
 		printf(" is lowercase character");
 	}
@@ -23,5 +25,5 @@ int main(void)
 		pritf(" is not an character.");
 	}
 
-	return 0;
+	return (0);
 }
