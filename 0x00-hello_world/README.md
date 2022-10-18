@@ -6,3 +6,4 @@ Hello World C programming
 4-puts - print string using puts 
 5-printf - print stringusing printf
 6-size - prints the size of various types
+
