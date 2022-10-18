@@ -1,2 +1,3 @@
 Taks
-0-positive or negative - 
+0-positive or negative -
+1-last digit - 
