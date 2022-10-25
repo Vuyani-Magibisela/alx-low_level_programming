@@ -1,29 +1,17 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _isupper check if character is upper case or lowercase
+ * _isupper - uppercase letters
+ * @c: character to check
  *
- *
+ * Return: 0 or 1
  */
 
-int main(void)
+
+int _isupper(int c)
 {
-	char ch;
-
-	ch = "A";
-
-	if (isupper(ch))
-	{
-		printf(" is uppercase chatacter");
-	}
-	else if (islower(ch))
-	{
-		printf(" is lowercase character");
-	}
+	if (c >= 'A' && c <= 'Z')
+		return (1);
 	else
-	{
-		pritf(" is not an character.");
-	}
-
-	return (0);
+		return (0);
 }
