@@ -7,22 +7,20 @@
  * @accept: character
  * Return: i.
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-	int count;
+	unsigned int i, j;
 
-	while (*s != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
-		while (*accept != '\0')
-		{
-			if (*s == *accept)
-				break;
-			count++;
-			accept++;
-			s++;
-		}
-		if (*accept == '\0')
-			break;
+		j = 0;
+		while (accept[j] != '\0' && s[i] != accept[j])
+			j++;
+		if (accept[j] == '\0')
+			return (i);
+		i++;
 	}
-	return (count + 1);
+	return (i);
 }
